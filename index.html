@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: rgb(202, 199, 35);
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: rgb(58, 189, 87);
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: rgb(255, 250, 249);
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: rgb(148, 40, 139);
+  padding: 10px;
+  text-align: center;
+  color: rgb(15, 3, 3);
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Portfolio</h2>
+<hr></hr>
+
+
+
+<header>
+  <h2>Shivam Naik</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><a href="index.html">About Me</a></li>
+      <li><a href="">Contact Me</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>About Me</h1>
+    <p>
+      <br>
+        I am an undergraduate studying IT in GEC.
+      </p>  
+        
+  </article>
+</section>
+
+<footer>
+  <p><h2>GOA ENGINEERING COLLEGE</h2></p>
+  
+</footer>
+
+</body>
+</html>
